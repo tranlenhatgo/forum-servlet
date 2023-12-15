@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	version="4.0">
+	<display-name>forum-servlet</display-name>
+	<welcome-file-list>
+		<welcome-file>/home</welcome-file>
+	</welcome-file-list>
+	
+	
+	<!-- ADMIN SERVLET -->
+	<servlet> <!-- function & display-->
+		<servlet-name>admin-login</servlet-name>
+		<servlet-class>com.myproject.admin.servlet.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>admin-login</servlet-name>
+		<url-pattern>/admin/login</url-pattern>
+	</servlet-mapping>
+	
+	<servlet> <!-- display -->
+		<servlet-name>list-thread</servlet-name>
+		<servlet-class>com.myproject.admin.servlet.GetThreadList</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>list-thread</servlet-name>
+		<url-pattern>/admin/list-thread</url-pattern>
+	</servlet-mapping>
+	
+	<servlet> <!-- function -->
+		<servlet-name>update-thread</servlet-name>
+		<servlet-class>com.myproject.admin.servlet.UpdateThread</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>update-thread</servlet-name>
+		<url-pattern>/admin/update-thread</url-pattern>
+		<url-pattern>/admin/add-update-thread</url-pattern>
+	</servlet-mapping>
+	
+	<servlet> <!-- function -->
+		<servlet-name>delete-thread</servlet-name>
+		<servlet-class>com.myproject.admin.servlet.DeleteThread</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>delete-thread</servlet-name>
+		<url-pattern>/admin/delete-thread</url-pattern>
+	</servlet-mapping>
+	
+	<servlet> <!-- function -->
+		<servlet-name>new-thread</servlet-name>
+		<servlet-class>com.myproject.admin.servlet.CreateNewThread</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>new-thread</servlet-name>
+		<url-pattern>/admin/createNewThread</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- ADMIN PATH -->
+	<servlet>
+		<servlet-name>login-ad</servlet-name>
+		<jsp-file>/admin/login.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>login-ad</servlet-name>
+		<url-pattern>/admin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet> <!-- forward -->
+		<servlet-name>home-ad</servlet-name>
+		<jsp-file>/admin/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home-ad</servlet-name>
+		<url-pattern>/admin/home</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>create-thread</servlet-name>
+		<jsp-file>/admin/create_thread.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>create-thread</servlet-name>
+		<url-pattern>/admin/create-thread</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!-- USER SERVLET -->
+	 <servlet>  
+   	 	<servlet-name>user-home</servlet-name>  
+   	 	<servlet-class>com.myproject.user.servlet.HomeUser</servlet-class>  
+   	 	<load-on-startup>0</load-on-startup>  
+  	 </servlet>
+  	 <servlet-mapping>
+  	 	<servlet-name>user-home</servlet-name>
+  	 	<url-pattern>/home</url-pattern>
+  	 </servlet-mapping>
+  	 
+  	 <servlet> <!-- function -->
+		<servlet-name>user-login</servlet-name>
+		<servlet-class>com.myproject.user.servlet.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>user-login</servlet-name>
+		<url-pattern>/user/login</url-pattern>
+	</servlet-mapping>
+  	 
+	 <servlet>  
+   	 	<servlet-name>thread-page</servlet-name>  
+   	 	<servlet-class>com.myproject.user.servlet.ThreadPage</servlet-class>
+  	 </servlet>
+  	 <servlet-mapping>
+  	 	<servlet-name>thread-page</servlet-name>
+  	 	<url-pattern>/thread</url-pattern>
+  	 </servlet-mapping>
+  	 
+  	 <servlet>  
+   	 	<servlet-name>create-post</servlet-name>  
+   	 	<servlet-class>com.myproject.user.servlet.CreateNewPost</servlet-class>
+  	 </servlet>
+  	 <servlet-mapping>
+  	 	<servlet-name>create-post</servlet-name>
+  	 	<url-pattern>/user/createNewPost</url-pattern>
+  	 </servlet-mapping>
+	
+	
+	<!-- USER PATH -->
+	<servlet>
+		<servlet-name>home-path</servlet-name>
+		<jsp-file>/user/home.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>home-path</servlet-name>
+		<url-pattern>/home-path</url-pattern> <!-- dùng trong forward -->
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>thread-path</servlet-name>
+		<jsp-file>/user/thread.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>thread-path</servlet-name>
+		<url-pattern>/thread-path</url-pattern> <!-- dùng trong forward -->
+	</servlet-mapping>
+
+
+	
+	
+</web-app>

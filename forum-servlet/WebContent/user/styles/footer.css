@@ -1,0 +1,90 @@
+@charset "UTF-8";
+.large-container {
+	margin-left: 140px !important;
+	margin-right: 140px !important;
+}
+
+.mg-s {
+	margin-left: 140px !important;
+}
+
+.mg-e {
+	margin-right: 140px !important;
+}
+
+.user-onl-head {
+	padding: 10px;
+	background-color: #3c4244;
+	color: white;
+}
+
+.user-onl-body {
+	background-color: rgb(248, 246, 244);
+}
+
+.user-onl-body p {
+	padding: 10px;
+	margin: 0;
+}
+
+.ender {
+	background-color: #3c4244;
+	color: white;
+}
+
+.about-me {
+	margin-right: 60px;
+	margin-top: 20px;
+}
+
+.about-me h4 {
+	color: #dcdad7;
+}
+
+.about-me p {
+	color: #938d83;
+}
+
+.contact {
+	margin-top: 20px;
+	margin-right: 0px;
+}
+
+.contact h4 {
+	color: #dcdad7;
+}
+
+.contact ul {
+	padding-left: 0;
+}
+
+.contact ul li {
+	color: #938d83;
+	padding-top: 2px;
+	list-style: none;
+	align-self: center;
+	padding-left: 0;
+	margin-left: 0;
+}
+
+.end-link {
+	margin-top: 20px;
+	padding-right: 0;
+	margin-right: 0;
+}
+
+.end-link ul {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.end-link ul li {
+	color: #938d83;
+	list-style: none;
+	font-size: 180%;
+}
+
+.end-link ul li:hover {
+	color: white;
+}

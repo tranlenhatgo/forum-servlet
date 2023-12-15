@@ -1,0 +1,81 @@
+@charset "UTF-8";
+
+.large-container {
+	margin-left: 140px !important;
+	margin-right: 140px !important;
+}
+
+.navbar {
+	background-color: #3c4244;
+}
+
+.home ion-icon{
+	color: white;
+}
+.home a{
+	color: white;
+}
+
+.btn-search {
+	background-color: white;
+	border-color: white;
+	color: rgba(0, 0, 0, 0.858);
+}
+
+.login-hover:hover {
+	border: 1px solid white;
+	border-radius: 5px;
+	padding: 3px;
+}
+
+/* Logo user */
+.user-login {
+	display: flex;
+	justify-content: space-around;
+    width: 150px;
+   /* 	border: 2px #c0c0c0; */
+    border: 1px solid gray;
+    padding: 3px; 
+    border-radius: 10px;
+}
+#user-pic {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	
+}
+.user-login ion-icon {
+	color: white;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.user-login p {
+	display: flex;
+	color: white;
+	align-items: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+	
+}
+.modal {
+	}
+	.modal-footer {
+		display:inline;
+	}
+		.modal-footer div {
+			display:inline-block;
+  			justify-content: flex-start;
+		}
+		.modal-footer div a {
+			padding: 18px;
+		}
+		.modal-footer div a:link {
+			color:black;
+			text-decoration: none;
+		}
+		.modal-footer button {
+			display:inline;
+			float: right;
+		}
+		
+

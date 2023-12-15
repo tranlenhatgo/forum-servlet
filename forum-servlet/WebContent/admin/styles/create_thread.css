@@ -1,0 +1,9 @@
+@charset "UTF-8";
+.inputImg{}
+	.inputImg .button{
+		color: black;
+		border: 1px solid black;
+		border-radius:5px;
+		margin-left: 20px;
+		padding: 0 5px 0 5px;
+	}
